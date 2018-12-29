@@ -54,22 +54,27 @@ body{
           transform: rotate(360deg);
       }
   }
+  .intro, .coming, .sign-up{
+      display: none;
+  }
+
+
 
   #text{
       width: 25vw;
-      /* color:#fff; */
+      color:#fff;
       font-weight: 500;
       position: absolute;
       right: 10%;
       top: 10%;
       font-size: 1.1rem;
-      animation-name: typewriting;
+      /* animation-name: typewriting;
       animation-duration: 11000ms;
-      animation-timing-function: steps(346);
+      animation-timing-function: steps(346); */
       
 
   }
-  @keyframes typewriting{
+  /* @keyframes typewriting{
       0%{
           width:0;
         }
@@ -80,7 +85,7 @@ body{
           width: 25vw
         }
     
-  } 
+  }  */
 
   #email{
       outline: none;
