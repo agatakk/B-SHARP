@@ -1,0 +1,14 @@
+@media(max-width: 376px){
+    #text{
+        width: 70vw;
+        top: 8%;
+    }
+    #email{
+        width: 60vw;
+        margin-top: 1rem;
+    }
+    #submit{
+        width: 35vw;
+
+    }
+}

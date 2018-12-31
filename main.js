@@ -3,12 +3,25 @@ setTimeout(function(){$("#green").animate({
     height: '100vh',
     top: "0",
     left:"0",
-    borderRadius:'0'
+    borderRadius:'0',
 },1500)}, 5000);
+
+
+
 setTimeout(function(){$("#par").animate({
     padding: '20px',
-    marginLeft: '-800px',
+    marginLeft: '-90vh',
   },1500)},5000);
+
+
+let viewportMobile = window.matchMedia("screen and (max-width: 376px");
+
+if(viewportMobile.matches){
+    setTimeout(function(){$("#par").animate({
+        marginLeft: '-200vh',
+      },1450)},5000);
+}
+
 
   function changeText(cont1,cont2,speed){
           var Otext=cont1.text();
