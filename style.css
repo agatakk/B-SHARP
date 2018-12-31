@@ -95,16 +95,46 @@ body{
       width: 18vw;
   }
   #submit{
-      padding: 0.5rem;
+      padding: .5rem;
       margin-top: 1.5rem;
       margin-left: 5rem;
       background-color: #fff;
       border: none;
-      width: 10vw;
+      width: 12vw;
+      height: 6vh;
       font-family: "Roboto Slab";
+      transition: all 0.5s ease;
+      text-align: center;
 
   }
+
+  #submit:hover{
+    cursor: pointer;
+    
+    color: white;
+    background-color: black;
+    border: 1px dotted white;
+}
+
+  #sign-up-form{
+      animation: fadein 3000ms linear 14000ms 1 forwards;
+      opacity: 0;
+      margin-top: 3rem;
+  }
+
+  @keyframes fadein{
+      0%{
+          opacity: 0;
+      };
+      50%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
   
+
 
 
 
