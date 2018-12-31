@@ -14,7 +14,7 @@ setTimeout(function(){$("#par").animate({
   },1500)},5000);
 
 
-let viewportMobile = window.matchMedia("screen and (max-width: 376px");
+let viewportMobile = window.matchMedia("screen and (max-width: 414px");
 
 if(viewportMobile.matches){
     setTimeout(function(){$("#par").animate({
