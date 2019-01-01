@@ -1,14 +1,34 @@
-@media(max-width: 414px){
+@media(min-width: 768px){
     #text{
-        width: 70vw;
-        top: 8%;
+        width: 40vw;
+    }
+}
+@media /*(min-width: 415px)and*/  (max-width: 767px){
+    #text{
+        width: 60vw;
+    }
+    #sign-up-form{
+        margin-top: 1.5rem;
     }
     #email{
-        width: 60vw;
+        width: 40vw;
         margin-top: 1rem;
     }
     #submit{
-        width: 35vw;
+        width: 25vw;
 
     }
 }
+
+@media (max-width: 414px){
+    #text{
+        width: 65vw;
+        top: 8%;
+    }
+    #email{
+        width: 53vw;
+    }
+  
+  
+};
+

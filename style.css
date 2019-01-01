@@ -86,13 +86,16 @@ body{
         }
     
   }  */
-
+  input{
+      font-size: 16px;
+  }
   #email{
       outline: none;
       border: 1px solid #fff;
-      padding: 0.5rem;
+      padding: 0.3rem;
       margin-left: 1rem;
       width: 18vw;
+     
   }
   #submit{
       padding: .5rem;
@@ -106,12 +109,12 @@ body{
       font-family: "Roboto Slab";
       transition: all 0.5s ease;
       text-align: center;
+      text-transform: uppercase;
 
   }
 
   #submit:hover{
     cursor: pointer;
-    
     color: white;
     background-color: black;
     border: 1px dotted white;

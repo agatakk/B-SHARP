@@ -14,11 +14,11 @@ setTimeout(function(){$("#par").animate({
   },1500)},5000);
 
 
-let viewportMobile = window.matchMedia("screen and (max-width: 414px");
+let viewportMobile = window.matchMedia("screen and (max-width: 767px");
 
 if(viewportMobile.matches){
     setTimeout(function(){$("#par").animate({
-        marginLeft: '-200vh',
+        marginLeft: '-350vh',
       },1450)},5000);
 }
 
