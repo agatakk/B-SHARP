@@ -5,7 +5,7 @@
 }
 @media /*(min-width: 415px)and*/  (max-width: 767px){
     #text{
-        width: 60vw;
+        width: 70vw;
     }
     #sign-up-form{
         margin-top: 1.5rem;
@@ -15,20 +15,16 @@
         margin-top: 1rem;
     }
     #submit{
-        width: 25vw;
-
+        width: 30vw;
     }
 }
 
 @media (max-width: 414px){
     #text{
         width: 65vw;
-        top: 8%;
     }
     #email{
         width: 53vw;
     }
-  
-  
 };
 

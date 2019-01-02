@@ -65,8 +65,8 @@ body{
       color:#fff;
       font-weight: 500;
       position: absolute;
-      right: 10%;
-      top: 15%;
+      right: 10vw;
+      top: 15vh;
       font-size: 1.1rem;
       /* animation-name: typewriting;
       animation-duration: 11000ms;
@@ -92,19 +92,19 @@ body{
   #email{
       outline: none;
       border: 1px solid #fff;
-      padding: 0.3rem;
+      padding: 0.6rem;
       margin-left: 1rem;
-      width: 18vw;
+      width: 21vw;
      
   }
   #submit{
-      padding: .5rem;
+      padding: .6rem;
       margin-top: 1.5rem;
       margin-left: 5rem;
       background-color: white;
       border: none;
-      width: 12vw;
-      height: 6.5vh;
+      width: 10vw;
+      
       line-height: 1;
       font-family: "Roboto Slab";
       transition: all 0.5s ease;
