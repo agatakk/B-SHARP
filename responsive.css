@@ -1,18 +1,20 @@
-@media(min-width: 768px){
+@media(min-width: 1024px){
     #text{
         width: 40vw;
     }
 }
 @media /*(min-width: 415px)and*/  (max-width: 767px){
     #text{
-        width: 70vw;
+        width: 75vw;
+        top: 8vh;
     }
     #sign-up-form{
         margin-top: 1.5rem;
     }
     #email{
         width: 40vw;
-        margin-top: 1rem;
+        margin-top: .8rem;
+        padding: .4rem;
     }
     #submit{
         width: 30vw;

@@ -6,9 +6,21 @@ body{
     padding: 0; 
     background-color: #fff;
     font-family: 'Roboto Slab', serif;
-    overflow: hidden;
+    overflow-x: hidden;
     color: #fff;
+    /* background-color: #fff; */
+    animation: color-black 1s linear 10s forwards;
 }
+
+@keyframes color-black{
+    0%{
+        background-color: #ffffff;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
 .scale{
     animation: scale;
     animation-duration: 5000ms;
@@ -61,7 +73,7 @@ body{
 
 
   #text{
-      width: 25vw;
+      width: 35vw;
       color:#fff;
       font-weight: 500;
       position: absolute;
