@@ -58,30 +58,30 @@ setTimeout(function(){$("#green").animate({
     
 //   },1050)},5000);
 // }
-const mql = window.matchMedia('screen and (max-width: 1024px)')
+// const mql = window.matchMedia('screen and (max-width: 1024px)')
 
-const mqls = [
-  window.matchMedia("(max-width: 1024px)"),
-  window.matchMedia("(max-width: 768px)"),
-]
- function moveLogo(mql){
-   if(mqls[0].matches){
-    setTimeout(function(){$("#par").animate({
-       marginLeft: '-40vh',
-         },1050)},5000);
-   }
-   else if(mqls[1].matches){
-    setTimeout(function(){$("#par").animate({
-         marginLeft: '-350vh',
-      },1450)},5000);
-   }
-   else{
-    setTimeout(function(){$("#par").animate({
-         padding: '20px',
-          marginLeft: '-90vh',
-      },1500)},5000);
-   }
- }
+// const mqls = [
+//   window.matchMedia("(max-width: 1024px)"),
+//   window.matchMedia("(max-width: 768px)"),
+// ]
+//  function moveLogo(mql){
+//    if(mqls[0].matches){
+//     setTimeout(function(){$("#par").animate({
+//        marginLeft: '-40vh',
+//          },1050)},5000);
+//    }
+//    else if(mqls[1].matches){
+//     setTimeout(function(){$("#par").animate({
+//          marginLeft: '-350vh',
+//       },1450)},5000);
+//    }
+//    else{
+//     setTimeout(function(){$("#par").animate({
+//          padding: '20px',
+//           marginLeft: '-90vh',
+//       },1500)},5000);
+//    }
+//  }
 
   function changeText(cont1,cont2,speed){
           var Otext=cont1.text();

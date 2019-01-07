@@ -2,7 +2,17 @@
     #text{
         width: 40vw;
     }
-}
+     @keyframes margin-left{
+        100%{
+            padding: 20px;
+            margin-left: -50vw;
+        }
+        }
+    #email{
+        width: 30vw;
+    } 
+    } 
+
 @media /*(min-width: 415px)and*/  (max-width: 767px){
     #text{
         width: 75vw;
@@ -12,12 +22,17 @@
         margin-top: 1.5rem;
     }
     #email{
-        width: 40vw;
+        width: 45vw;
         margin-top: .8rem;
         padding: .4rem;
     }
     #submit{
         width: 30vw;
+    }
+    @keyframes margin-left{
+        100%{
+            margin-left: -350vw;
+        }
     }
 }
 
@@ -26,7 +41,7 @@
         width: 65vw;
     }
     #email{
-        width: 53vw;
+        width: 60vw;
     }
 };
 
