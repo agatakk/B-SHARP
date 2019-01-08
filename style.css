@@ -8,7 +8,7 @@ body{
     font-family: 'Roboto Slab', serif;
     overflow-x: hidden;
     color: #fff;
-    animation: color-black 1s linear 10s forwards;
+    animation: color-black 1s linear 7s forwards;
 }
 
 @keyframes color-black{
@@ -53,7 +53,7 @@ body{
     line-height: 2.1;
     animation: 
         rotate 900ms linear 5 forwards,
-        margin-left 1500ms linear 1 forwards 5000ms;
+        margin-left 2500ms linear 1 forwards 5000ms;
   }
   @keyframes rotate{
       100%{
@@ -96,22 +96,23 @@ body{
       padding: .6rem;
       margin-top: 1.5rem;
       margin-left: 5rem;
-      background-color: white;
-      border: none;
-      width: 10vw;
+      background-color: black;
+      color: #fff;
+      border: 1px dotted #fff;
+      min-width: 10vw;
       line-height: 1;
       font-family: "Roboto Slab";
       transition: all 0.5s ease;
       text-align: center;
-      text-transform: uppercase;
+      font-weight: 300;
 
   }
 
   #submit:hover{
     cursor: pointer;
-    color: white;
-    background-color: black;
-    border: 1px dotted white;
+    color: black;
+    background-color:white;
+    border: none;
 }
 
   #sign-up-form{

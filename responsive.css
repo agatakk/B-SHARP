@@ -11,9 +11,12 @@
     #email{
         width: 30vw;
     } 
+    #submit{
+        min-width: 13vw;
+    }
     } 
 
-@media /*(min-width: 415px)and*/  (max-width: 767px){
+@media (max-width: 767px){
     #text{
         width: 75vw;
         top: 8vh;
@@ -43,5 +46,11 @@
     #email{
         width: 60vw;
     }
-};
+}
+
+@media (max-height: 376px){
+  #text{
+     font-size: 1rem;
+  }
+}
 
