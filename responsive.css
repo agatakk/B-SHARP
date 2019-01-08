@@ -1,11 +1,14 @@
-@media(max-width: 1024px){
+@media(max-width: 1024px) and (min-height: 768px){
     #text{
-        width: 40vw;
+        padding: 5vw;
+        width: 60vw;
+        top: 40vw;
     }
      @keyframes margin-left{
         100%{
             padding: 20px;
-            margin-left: -50vw;
+            margin-left: auto;
+            margin-top: -8vw;
         }
         }
     #email{
