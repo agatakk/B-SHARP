@@ -10,6 +10,7 @@ body{
     color: #fff;
     animation: color-black 1s linear 7s forwards;
 }
+/* animacja body - kolor zmiana */
 
 @keyframes color-black{
     0%{
@@ -19,9 +20,11 @@ body{
         background-color: black;
     }
 }
-
+/* animacja sekcji #logo - powiększanie [scale] */
 .scale{
-    animation: scale 5000ms linear 1 forwards;
+    animation: 
+    scale 5000ms linear 1 forwards,
+    radius 1000ms linear 1 forwards 5000ms;
   }
   @keyframes scale{
     0%{
@@ -34,6 +37,16 @@ body{
       transform: scale(1);
     }
   }
+  @keyframes radius{
+      100%{
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+  }
+
 #logo{
     width: 500px;
     height: 500px;
@@ -55,6 +68,8 @@ body{
         rotate 900ms linear 5 forwards,
         margin-left 2500ms linear 1 forwards 5000ms;
   }
+
+  /* animacje loga [#par] obracanie i przechodzenie na lewą stronę ekranu, bądź znikanie w wersji mobilnej */
   @keyframes rotate{
       100%{
           transform: rotate(360deg);
@@ -66,6 +81,8 @@ body{
         margin-left: -45vw;
     }
 }
+
+/* stylowanie tekstu */
   .intro, .coming, .sign-up{
       display: none;
   }

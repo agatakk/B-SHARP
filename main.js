@@ -1,10 +1,10 @@
-setTimeout(function(){$("#green").animate({
-    width: '100vw',
-    height: '100vh',
-    top: "0",
-    left:"0",
-    borderRadius:'0',
-},1500)}, 5000);
+// setTimeout(function(){$("#green").animate({
+//     width: '100vw',
+//     height: '100vh',
+//     top: "0",
+//     left:"0",
+//     borderRadius:'0',
+// },1500)}, 5000);
 
 
 
