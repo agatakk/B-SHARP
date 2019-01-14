@@ -96,19 +96,19 @@
            var Otimer=setInterval(show,speed);
         };
    setTimeout(function(){
-          changeText($(".intro"),$(".p2"),40); //  150 = the Delay time in milliseconds between strokes.
+          changeText($(".intro"),$(".p2"),35); 
           clearInterval(Otimer);
         },6500);
 
     setTimeout(function(){
-            changeText($(".coming"),$(".p3"),50); //  150 = the Delay time in milliseconds between strokes.
+            changeText($(".coming"),$(".p3"),35); 
             clearInterval(Otimer);
-          },11300);
+          },10700);
 
     setTimeout(function(){
-            changeText($(".sign-up"),$(".p4"),45); //  150 = the Delay time in milliseconds between strokes.
+            changeText($(".sign-up"),$(".p4"),35); // 35 = the Delay time in milliseconds between strokes.
             clearInterval(Otimer);
-          },12000);
+          },11200);
 
     
     

@@ -66,7 +66,7 @@ body{
     line-height: 2.1;
     animation: 
         rotate 900ms linear 5 forwards,
-        margin-left 2500ms linear 1 forwards 5000ms;
+        margin-left 1500ms linear 1 forwards 5000ms;
   }
 
   /* animacje loga [#par] obracanie i przechodzenie na lewą stronę ekranu, bądź znikanie w wersji mobilnej */
@@ -133,7 +133,7 @@ body{
 }
 
   #sign-up-form{
-      animation: fadein 3000ms linear 14000ms 1 forwards;
+      animation: fadein 3000ms linear 13000ms 1 forwards;
       opacity: 0;
       margin-top: 3rem;
   }
