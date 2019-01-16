@@ -23,30 +23,33 @@
 
 
 @media(max-width: 1024px) {
-    #email{
+    /* #email{
         width: 30vw;
     } 
     #submit{
         min-width: 13vw;
+    }*/
+    #text{
+        top: 25vh;
     }
-    } 
+    }  
 
 @media (max-width: 767px){
     #text{
-        width: 75vw;
-        top: 8vh;
+        width: 50vw;
+        top: 20vh;
     }
     #sign-up-form{
         margin-top: 1.5rem;
     }
-    #email{
+    /* #email{
         width: 45vw;
         margin-top: .8rem;
         padding: .4rem;
     }
     #submit{
         width: 30vw;
-    }
+    } */
     @keyframes margin-left{
         100%{
             margin-left: -350vw;
