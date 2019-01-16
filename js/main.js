@@ -105,10 +105,10 @@
             clearInterval(Otimer);
           },10700);
 
-    setTimeout(function(){
-            changeText($(".sign-up"),$(".p4"),35); // 35 = the Delay time in milliseconds between strokes.
-            clearInterval(Otimer);
-          },11200);
+    // setTimeout(function(){
+    //         changeText($(".sign-up"),$(".p4"),35); // 35 = the Delay time in milliseconds between strokes.
+    //         clearInterval(Otimer);
+    //       },11200);
 
     
     
