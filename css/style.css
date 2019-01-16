@@ -101,31 +101,39 @@ body{
   #email{
       outline: none;
       border: 1px solid #fff;
+      background-color: #fff;
       padding: .4rem;
-      width: 21vw;
+      margin: 0 auto;
+      width: 100%;
       font-family: "Roboto Slab", serif;
+      color: #fff;
+  }
+  #email:placeholder{
+      font-size: .8rem;
   }
 
   #submit{
       padding: .6rem;
-      background-color:#23476b;
+      margin: 5vh auto 0 auto;
+      background-color: black;
       color: #fff;
+      border: 1px dotted white;
       min-width: 10vw;
       line-height: 1;
       font-family: "Roboto Slab", serif;
-      border: none;
       border-radius: .2rem;
       transition: all 0.5s ease;
       text-align: center;
       font-weight: 300;
 
   }
-
+  
   #submit:hover{
     cursor: pointer;
-    color:#0080ff;
+    color: black;
     background-color:white;
-    border: 1px solid #0080ff;
+    border: 1px solid black;
+    font-weight: 700;
 }
 
   #sign-up-form{
@@ -133,10 +141,9 @@ body{
       opacity: 0;
       margin-top: 3rem;
       display: flex;
-      flex-direction: row;
-      border: 1px solid white;
+      flex-direction: column;
       border-radius: .2rem;
-      background-color: white;
+      background-color:  black;
       width: 100%;
       padding: .07rem;
   }
