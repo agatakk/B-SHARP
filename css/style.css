@@ -97,28 +97,24 @@ body{
       font-size: 1.1rem;
   }
  
-  input{
-      font-size: 16px;
-  }
 
   #email{
       outline: none;
       border: 1px solid #fff;
-      padding: 0.6rem;
-      margin-left: 1rem;
+      padding: .4rem;
       width: 21vw;
+      font-family: "Roboto Slab", serif;
   }
 
   #submit{
       padding: .6rem;
-      margin-top: 1.5rem;
-      margin-left: 5rem;
-      background-color: black;
+      background-color:#23476b;
       color: #fff;
-      border: 1px dotted #fff;
       min-width: 10vw;
       line-height: 1;
-      font-family: "Roboto Slab";
+      font-family: "Roboto Slab", serif;
+      border: none;
+      border-radius: .2rem;
       transition: all 0.5s ease;
       text-align: center;
       font-weight: 300;
@@ -127,15 +123,22 @@ body{
 
   #submit:hover{
     cursor: pointer;
-    color: black;
+    color:#0080ff;
     background-color:white;
-    border: none;
+    border: 1px solid #0080ff;
 }
 
   #sign-up-form{
       animation: fadein 3000ms linear 13000ms 1 forwards;
       opacity: 0;
       margin-top: 3rem;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid white;
+      border-radius: .2rem;
+      background-color: white;
+      width: 100%;
+      padding: .07rem;
   }
 
   @keyframes fadein{
