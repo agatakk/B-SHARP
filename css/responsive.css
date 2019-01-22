@@ -23,9 +23,7 @@
 
 
 @media(max-width: 1024px) {
-    #email{
-        width: 30vw;
-    } 
+   
     #submit{
         min-width: 13vw;
     }
@@ -40,7 +38,6 @@
         margin-top: 1.5rem;
     }
     #email{
-        width: 45vw;
         margin-top: .8rem;
         padding: .4rem;
     }
@@ -58,9 +55,7 @@
     #text{
         width: 65vw;
     }
-    #email{
-        width: 60vw;
-    }
+  
 }
 
 @media (max-height: 376px){
