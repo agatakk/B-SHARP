@@ -1,53 +1,61 @@
-*{
+* {
     box-sizing: border-box
 }
-body{
+
+body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     background-color: #fff;
     font-family: 'Roboto Slab', serif;
     overflow-x: hidden;
     color: #fff;
     animation: color-black 1s linear 7s forwards;
 }
+
 /* animacja body - kolor zmiana */
 
-@keyframes color-black{
-    0%{
+@keyframes color-black {
+    0% {
         background-color: #ffffff;
     }
-    100%{
+
+    100% {
         background-color: black;
     }
 }
+
 /* animacja sekcji #logo - powiększanie [scale] */
-.scale{
-    animation: 
-    scale 5000ms linear 1 forwards,
-    radius 1000ms linear 1 forwards 5000ms;
-  }
-  @keyframes scale{
-    0%{
-      transform: scale(0);
+.scale {
+    animation:
+        scale 5000ms linear 1 forwards,
+        radius 1000ms linear 1 forwards 5000ms;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
     }
-    50%{
-      transform: scale(0.5);
+
+    50% {
+        transform: scale(0.5);
     }
-    100%{
-      transform: scale(1);
+
+    100% {
+        transform: scale(1);
     }
-  }
-  @keyframes radius{
-      100%{
+}
+
+@keyframes radius {
+    100% {
         border-radius: 0;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-      }
-  }
+    }
+}
 
-#logo{
+#logo {
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -55,113 +63,115 @@ body{
     position: absolute;
     top: calc(50% - 250px);
     left: calc(50% - 250px);
-    
-  }
-  
-  #par{
-    
+
+}
+
+#logo_header {
+
     margin: 0;
     text-align: center;
     font-size: 15rem;
+    font-weight: 400;
     line-height: 2.1;
-    animation: 
+    animation:
         rotate 900ms linear 5 forwards,
         margin-left 1500ms linear 1 forwards 5000ms;
-  }
+}
 
-  /* animacje loga [#par] obracanie i przechodzenie na lewą stronę ekranu, bądź znikanie w wersji mobilnej */
-  @keyframes rotate{
-      100%{
-          transform: rotate(360deg);
-      }
-  }
-  @keyframes margin-left{
-    100%{
-        top: 10vh;
+/* animacje loga [#par] obracanie i przechodzenie na lewą stronę ekranu, bądź znikanie w wersji mobilnej */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes margin-left {
+    100% {
         margin-left: -45vw;
     }
 }
 
 /* stylowanie tekstu */
-  .intro, .coming, .sign-up{
-      display: none;
-  }
+.intro,
+.coming,
+.sign-up {
+    display: none;
+}
 
-  #text{
-      width: 30vw;
-      color:#fff;
-      font-weight: 500;
-      position: absolute;
-      right: 10vw;
-      top: 20vh;
-      font-size: 1.1rem;
-  }
- 
+#text {
+    width: 30vw;
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    right: 10vw;
+    top: 20vh;
+    font-size: 1.1rem;
+}
 
-  #email{
-      outline: none;
-      border: 1px solid #fff;
-      background-color: #fff;
-      padding: .4rem;
-      margin: 0 auto;
-      width: 100%;
-      font-family: "Roboto Slab", serif;
-      color: black;
-  }
-  #email:placeholder{
-      font-size: .8rem;
-  }
 
-  #submit{
-      padding: .6rem;
-      margin: 5vh auto 0 auto;
-      background-color: black;
-      color: #fff;
-      border: 1px dotted white;
-      min-width: 10vw;
-      line-height: 1;
-      font-family: "Roboto Slab", serif;
-      border-radius: .2rem;
-      transition: all 0.5s ease;
-      text-align: center;
-      font-weight: 300;
+#email {
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: .4rem;
+    margin: 0 auto;
+    width: 100%;
+    font-family: "Roboto Slab", serif;
+    color: black;
+}
 
-  }
-  
-  #submit:hover{
+#email:placeholder {
+    font-size: .8rem;
+}
+
+#submit {
+    padding: .6rem;
+    margin: 5vh auto 0 auto;
+    background-color: black;
+    color: #fff;
+    border: 1px dotted white;
+    min-width: 10vw;
+    line-height: 1;
+    font-family: "Roboto Slab", serif;
+    border-radius: .2rem;
+    transition: all 0.5s ease;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+#submit:hover {
     cursor: pointer;
     color: black;
-    background-color:white;
+    background-color: white;
     border: 1px solid black;
     font-weight: 700;
 }
 
-  #sign-up-form{
-      animation: fadein 3000ms linear 13000ms 1 forwards;
-      opacity: 0;
-      margin-top: 3rem;
-      display: flex;
-      flex-direction: column;
-      border-radius: .2rem;
-      background-color:  black;
-      width: 100%;
-      padding: .07rem;
-  }
+#sign-up-form {
+    animation: fadein 3000ms linear 13000ms 1 forwards;
+    opacity: 0;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .2rem;
+    background-color: black;
+    width: 100%;
+    padding: .07rem;
+}
 
-  @keyframes fadein{
-      0%{
-          opacity: 0;
-      };
-      50%{
-          opacity: 0;
-      }
-      100%{
-          opacity: 1;
-      }
-  }
-  
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
 
+    ;
 
+    50% {
+        opacity: 0;
+    }
 
-
-
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,3 +1,6 @@
+  'use strict';
+ //TYPEWRITER EFFECT
+ 
   function changeText(cont1,cont2,speed){
           var Otext=cont1.text();
           var Ocontent=Otext.split("");
@@ -10,7 +13,7 @@
           };
         };
         
-          Otimer = setInterval(show,speed); 
+          const Otimer = setInterval(show,speed); 
         };
 
         setTimeout(function(){
@@ -29,7 +32,25 @@
             function clear(){ clearInterval(Otimer)};
           },11200);
 
-  
+//WALIDACJA FORMULARZA
+
+ const form = $('#sign-up-form');
+ const email = $('#email');
+ const mistakes = $('#mistakes');
+
+ console.log(mistakes);
+
+
+ form.submit(function(){
+   const liMistakesText = [];
+
+   mistakes.empty();
+
+   if(email.val()===""){
+        liMistakesText.push("Please fill in the email field.")
+   }
+   return false;
+ });
 
    
 

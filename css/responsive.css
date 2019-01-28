@@ -1,66 +1,67 @@
-
 @media (min-height: 767px) {
-    #text{
+    #text {
         padding: 5vw;
         width: 60vw;
         top: 35vh;
     }
-     @keyframes margin-left{
-        100%{
+    @keyframes margin-left {
+        100% {
             padding: 20px;
             margin-left: auto;
             margin-top: -13vh;
         }
-        }
+    }
 }
-@media (min-height: 950px){ 
-    @keyframes margin-left{
-        100%{   
+
+@media (min-height: 950px) {
+    @keyframes margin-left {
+        100% {
             margin-top: 0;
         }
     }
 }
-
-
 @media(max-width: 1024px) {
-   
-    #submit{
+
+    #submit {
         min-width: 13vw;
     }
-    } 
+}
 
-@media (max-width: 767px){
-    #text{
+@media (max-width: 767px) {
+    #text {
         width: 75vw;
         top: 8vh;
     }
-    #sign-up-form{
+
+    #sign-up-form {
         margin-top: 1.5rem;
     }
-    #email{
+
+    #email {
         margin-top: .8rem;
         padding: .4rem;
     }
-    #submit{
+
+    #submit {
         width: 30vw;
     }
-    @keyframes margin-left{
-        100%{
+
+    @keyframes margin-left {
+        100% {
             margin-left: -350vw;
         }
     }
 }
 
-@media (max-width: 414px){
-    #text{
+@media (max-width: 414px) {
+    #text {
         width: 65vw;
     }
-  
+
 }
 
-@media (max-height: 376px){
-  #text{
-     font-size: 1rem;
-  }
+@media (max-height: 376px) {
+    #text {
+        font-size: 1rem;
+    }
 }
-
