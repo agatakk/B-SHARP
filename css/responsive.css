@@ -1,25 +1,32 @@
+/* height responsiveness */
 @media (min-height: 767px) {
     #text {
         padding: 5vw;
         width: 60vw;
         top: 35vh;
     }
-    @keyframes margin-left {
+    @keyframes move_left {
         100% {
-            padding: 20px;
-            margin-left: auto;
-            margin-top: -13vh;
+           transform: translateX(-40vw);
         }
     }
 }
 
 @media (min-height: 950px) {
-    @keyframes margin-left {
+    @keyframes move_left {
         100% {
-            margin-top: 0;
+            transform: translateY(50vw);
         }
     }
 }
+@media (max-height: 376px) {
+    #text {
+        font-size: 1rem;
+    }
+}
+
+/*width responsiveness*/
+
 @media(max-width: 1024px) {
 
     #submit {
@@ -46,9 +53,9 @@
         width: 30vw;
     }
 
-    @keyframes margin-left {
+    @keyframes move_left {
         100% {
-            margin-left: -350vw;
+            transform: translateX(-350vw);
         }
     }
 }
@@ -60,8 +67,3 @@
 
 }
 
-@media (max-height: 376px) {
-    #text {
-        font-size: 1rem;
-    }
-}

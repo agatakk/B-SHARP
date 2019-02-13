@@ -8,86 +8,119 @@ body {
     background-color: #fff;
     font-family: 'Roboto Slab', serif;
     overflow-x: hidden;
-    color: #fff;
-    animation: color-black 1s linear 7s forwards;
+    animation: change_black 1000ms linear forwards 7000ms;
 }
 
-/* animacja body - kolor zmiana */
-
-@keyframes color-black {
-    0% {
-        background-color: #ffffff;
-    }
-
-    100% {
+@keyframes change_black{
+    100%{
         background-color: black;
     }
 }
+.container_wrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index:-2;
+}
+.container_wrapper::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: black;
+    animation: 
+      opacity_change .5s linear forwards 4s,
+      scale_before 3s linear forwards 4s;
+  }
+  /* powiekszanie oraz animacja opacity ::before */
 
-/* animacja sekcji #logo - powiększanie [scale] */
-.scale {
+  @keyframes scale_before{
+    0%{
+      transform: scale(0);
+    }
+    50%{
+      transform: scale(0.15, 0.8)
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes opacity_change{
+    100%{
+      opacity: 1;    }  
+    }
+
+/* animacja sekcji #logo - powiększanie [scale_one] oraz border-radius [radius] */
+.logo_main {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation:
-        scale 5000ms linear 1 forwards,
-        radius 1000ms linear 1 forwards 5000ms;
+        scale_one 4500ms linear forwards,
+        radius 1000ms linear forwards 4500ms;
+       
 }
 
-@keyframes scale {
+@keyframes scale_one {
     0% {
         transform: scale(0);
     }
-
     50% {
         transform: scale(0.5);
     }
-
     100% {
         transform: scale(1);
     }
 }
 
 @keyframes radius {
-    100% {
+    0%{
+        border-radius: 50%;
+      }
+      50%{
+        border-radius: 25%;
+      }
+      100%{
         border-radius: 0;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
-#logo {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: black;
-    position: absolute;
-    top: calc(50% - 250px);
-    left: calc(50% - 250px);
-
+      }
 }
 
 #logo_header {
-
     margin: 0;
-    text-align: center;
+    color: #fff;
     font-size: 15rem;
     font-weight: 400;
-    line-height: 2.1;
     animation:
         rotate 900ms linear 5 forwards,
-        margin-left 1500ms linear 1 forwards 5000ms;
+        move_left 1200ms linear forwards 6800ms;
+
 }
 
-/* animacje loga [#par] obracanie i przechodzenie na lewą stronę ekranu, bądź znikanie w wersji mobilnej */
+/* animacje loga [#Logo_header] obracanie i przechodzenie na lewą stronę ekranu, bądź znikanie w wersji mobilnej */
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
     }
 }
 
-@keyframes margin-left {
+@keyframes move_left {
     100% {
-        margin-left: -45vw;
+
+        transform: translateX(-25vw);
     }
 }
 
